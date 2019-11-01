@@ -7,5 +7,7 @@ def execute
   puts " "
   puts "-----------------------------------------"
   puts " "
+  
+  html = open("https://www.tripadvisor.com/Restaurants-g28970-c10785-Washington_DC_District_of_Columbia.html")
 end 
   
