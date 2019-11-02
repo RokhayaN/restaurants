@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
-require_relative "../lib/restaurantsL/cli.rb"
+require_relative"../lib/restaurantsL/cli.rb"
 
 execute 
