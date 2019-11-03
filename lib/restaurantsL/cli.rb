@@ -18,7 +18,7 @@ def execute
     restaurants << restaurantName
   end 
   restaurants.each.with_index(1) do |restaurantName,index|
-  puts "#{index}.#{restaurantName}"
+  puts "#{restaurantName}"
   #binding.pry
  end 
 end 
