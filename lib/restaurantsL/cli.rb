@@ -2,6 +2,9 @@ require 'nokogiri'
 require 'open-uri'
 require 'pry'
 
+class Cli 
+  
+end
 
 def execute 
   puts "Are you a foodie like me ?"
