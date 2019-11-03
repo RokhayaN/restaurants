@@ -10,3 +10,4 @@ require_relative "../lib/restaurantsL/restaurant.rb"
 
 
 
+Cli.new.execute
