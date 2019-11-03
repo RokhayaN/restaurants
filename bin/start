@@ -9,5 +9,4 @@ require_relative "../lib/restaurantsL/sraper.rb"
 require_relative "../lib/restaurantsL/restaurant.rb"
 
 
-
-Cli.new.execute
+Cli.new.execute 

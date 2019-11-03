@@ -10,8 +10,8 @@ def execute
   end 
   
  def show_restaurants
-   Restaurant.all.each.with_index(1) do |restaurantName,index|
-  puts "#{restaurantName}"
+   Restaurant.all.each.with_index(1) do |restaurant,index|
+  puts "#{restaurant}"
 end 
 end 
   
