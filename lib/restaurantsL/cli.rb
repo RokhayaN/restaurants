@@ -10,20 +10,20 @@ class Cli
     binding.pry
     #loop that asks user what to do and does that until "exit"
   
-    list_layout
-    show_restaurants
+    #list_layout
+    #show_restaurants
   
   end 
   
   
-  def lay_out
-  end 
+  #def lay_out
+  #end 
   
-  def show_restaurants
-    Restaurant.all.each.with_index(1) do |restaurant,index|
-      puts "#{index},#{restaurant.name}"
-    end
-  end 
+  #def show_restaurants
+   # Restaurant.all.each.with_index(1) do |restaurant,index|
+      #puts "#{index},#{restaurant.name}"
+    #end
+  #end 
 end 
 
 
