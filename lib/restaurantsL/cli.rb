@@ -2,7 +2,7 @@ class Cli
   
   def execute 
     puts "Are you a foodie like me ?"
-    puts "Theses are the best ethiopian restaurants in DC. "
+    puts "Check this out!These are the Michelin-recommended Ethiopian Restaurants in DC - and the number you get will depend on how many Michelin is currently recommending! "
     puts " "
     puts "-----------------------------------------"
     puts " "
