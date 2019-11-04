@@ -14,7 +14,7 @@ class Scraper
  def self.scrape_restaurants_elements(restaurant)
    html = open ("https://www.tripadvisor.com/Restaurants-g28970-c10785-Washington_DC_District_of_Columbia.html#{restaurant.url}")
    doc = Nokogiri::HTML(html)
-   biding.pry
+   binding.pry
   end
 end
   

@@ -9,14 +9,13 @@ class Cli
     
     Scraper.scrape_restaurants
     show_restaurants
-    binding.pry
     puts " "
-    puts "Select the number of a restaurant to learn more about it or type "exit"to exit"
+    puts "Select the number of a restaurant to learn more about it or type 'exit'to exit"
     input = gets.strip.downcase
     while input != "exit" do 
-        restaurant = Restaurant.all[input.to_i -1]
+        restaurant = Restaurant.all[input.to_i - 1]
         Scraper.scrape_restaurants_elements(restaurant)
-        
+    end 
   end 
   
   def show_restaurants
