@@ -9,11 +9,20 @@ def execute
   Sraper.scrape_movies
   
   #loop that asks user what to do and does that until "exit"
-  end 
+  
+  list_layout
+  show_restaurants
+  
+end 
+  
+  
+  def lay_out
+end 
   
  def show_restaurants
    Restaurant.all.each.with_index(1) do |restaurant,index|
-  puts "#{restaurant}"
+  puts "#{index},#{restaurant.name}"
 end 
 end 
+
   
