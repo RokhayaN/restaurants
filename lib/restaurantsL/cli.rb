@@ -6,7 +6,9 @@ def execute
   puts " "
   puts "-----------------------------------------"
   puts " "
+  Sraper.scrape_movies
   
+  #loop that asks user what to do and does that until "exit"
   end 
   
  def show_restaurants

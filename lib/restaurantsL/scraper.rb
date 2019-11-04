@@ -7,6 +7,7 @@ class Scraper
   doc.css("div.ui_column.is-narrow.title_wrap").each do |r|
     restaurant = Restaurant.new
     restaurant.name = r.css("a.restaurants-list-ListCell__restaurantName--2aSdo").text.strip
+    restaurant.url = r.css("a").attribute("href").value
   
   end  
 end 
