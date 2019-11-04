@@ -14,7 +14,7 @@ class Cli
   
   def show_restaurants
     Restaurant.all.each.with_index(1) do |restaurant,index|
-      puts "#{index}.#{restaurant.name}"
+      puts "#{index}. #{restaurant.name}"
     end
   end 
 end 
