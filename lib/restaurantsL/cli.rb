@@ -6,10 +6,17 @@ class Cli
     puts " "
     puts "-----------------------------------------"
     puts " "
+    
     Scraper.scrape_restaurants
     show_restaurants
     binding.pry
-    #loop that asks user what to do and does that until "exit"
+    puts " "
+    puts "Select the number of a restaurant to learn more about it or type "exit"to exit"
+    input = gets.strip.downcase
+    while input != "exit" do 
+        restaurant = Restaurant.all[input.to_i -1]
+        Scraper.scrape_restaurants_elements(restaurant)
+        
   end 
   
   def show_restaurants
