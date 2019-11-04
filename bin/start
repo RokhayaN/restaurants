@@ -1,12 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'nokogiri'
-require 'open-uri'
-require 'pry'
-
-require_relative "../lib/restaurantsL/cli.rb"
-require_relative "../lib/restaurantsL/sraper.rb"
-require_relative "../lib/restaurantsL/restaurant.rb"
-
+require_relative "../lib/environment.rb"
 
 Cli.new.execute 
