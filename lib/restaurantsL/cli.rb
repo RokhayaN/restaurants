@@ -17,8 +17,12 @@ class Cli
         restaurant = Restaurant.all[input.to_i - 1]
         Scraper.scrape_restaurants_elements(restaurant)
         print_restaurant(restaurant)
-      
+        puts " "
+        puts "Would you like more options to make the best decision ? "
+        puts "In that case ,select another number to see more details or type 'exit'to exit"
+        input = gets.strip.downcase
     end 
+    puts "See you ,next time !"
   end 
   def print_restaurant(restaurant)
     puts "-----------------------------------------"
