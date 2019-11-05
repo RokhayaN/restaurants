@@ -24,8 +24,8 @@ class Cli
     puts "-----------------------------------------"
     puts "#{restaurant.name}"
     puts "#{restaurant.description}"
-    puts "#{restaurant.phone_number}"
-    puts "#{restaurant.address}"
+    puts "#{restaurant.url}"
+    
     puts "-----------------------------------------"
   end 
   def show_restaurants
