@@ -10,26 +10,28 @@ class Cli
     Scraper.scrape_restaurants
     show_restaurants
     puts " "
-    puts "Select the number of a restaurant to learn more about it or type 'exit'to exit"
+    puts "Select the number of a restaurant to learn more about it type 'list' to visualize the list again or type 'exit'to exit"
     input = gets.strip.downcase
     while input != "exit" do 
-        restaurant = Restaurant.all[input.to_i - 1]
+        
+      if input.to_i > 0 && input.to_i <= Restaurant.all.count 
+         restaurant = Restaurant.all[input.to_i - 1]
         Scraper.scrape_restaurants_elements(restaurant) if !restaurant.description
         print_restaurant(restaurant)
         
-        puts " "
-        puts "Would you like more options to make the best decision ? "
-        puts "In that case ,select another number to see more details or type 'list to visualize the list again or type 'exit'to exit"
-        
-        input = gets.strip.downcase
-      if input == input.to_i && input.to_i <= Restaurant.all.count
-        puts print_restaurant(restaurant)
       elsif input == "list"
         show_restaurants
+      #elsif input == "exit"
+        #puts "See you ,next time !"
       else
-        puts "I'm not sure .I get this!"
-     end 
-   end 
+        puts "I'm not sure I get this!"
+      end
+      puts " "
+        puts "Would you like more options to make the best decision ? "
+        puts "In that case ,select another number to see more details or type 'list' to visualize the list again or type 'exit'to exit"
+        
+        input = gets.strip.downcase
+    end 
     puts "See you ,next time !"
   end 
   def print_restaurant(restaurant)
