@@ -16,7 +16,7 @@ class Cli
       
         restaurant = Restaurant.all[input.to_i - 1]
         Scraper.scrape_restaurants_elements(restaurant)
-        print_restaurant
+        print_restaurant(restaurant)
       
     end 
   end 
