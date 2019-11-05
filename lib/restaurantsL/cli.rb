@@ -19,9 +19,17 @@ class Cli
         
         puts " "
         puts "Would you like more options to make the best decision ? "
-        puts "In that case ,select another number to see more details or type 'exit'to exit"
+        puts "In that case ,select another number to see more details or type 'list to visualize the list again or type 'exit'to exit"
+        
         input = gets.strip.downcase
-    end 
+      if input == input.to_i && input.to_i <= Restaurant.all.count
+        puts print_restaurant(restaurant)
+      elsif input == "list"
+        show_restaurants
+      else
+        puts "I'm not sure .I get this!"
+     end 
+   end 
     puts "See you ,next time !"
   end 
   def print_restaurant(restaurant)
