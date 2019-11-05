@@ -1,5 +1,5 @@
 class Restaurant
-  attr_accessor :name ,:url ,:description 
+  attr_accessor :name ,:url ,:description, :phone_number, :address
   @@all = []
   
   def initialize 
