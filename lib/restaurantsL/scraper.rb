@@ -16,13 +16,9 @@ class Scraper
    html = open ("https://guide.michelin.com/us/en/washington/washington-dc/article/dining-out/ethiopian-food-restaurants-washington-dc#")
    doc = Nokogiri::HTML(html)
    restaurant.address = doc.css('.restaurant-details__heading--list li')[2].text 
-   restaurant.phone number = doc.css(".collapse__block a").attribute("href").value 
+   restaurant.phone_number = doc.css(".collapse__block a").attribute("href").value 
    restaurant.description = doc.css("p").first.text.strip 
-
-
-   
-   
-  end
+ end
 end
   
   
