@@ -16,9 +16,18 @@ class Cli
       
         restaurant = Restaurant.all[input.to_i - 1]
         Scraper.scrape_restaurants_elements(restaurant)
+        print_restaurant
+      
     end 
   end 
-  
+  def print_restaurant(restaurant)
+    puts "-----------------------------------------"
+    puts "#{restaurant.name}"
+    puts "#{restaurant.description}"
+    puts "#{restaurant.phone_number}"
+    puts "#{restaurant.address}"
+    puts "-----------------------------------------"
+  end 
   def show_restaurants
     Restaurant.all.each.with_index(1) do |restaurant,index|
       puts "#{index}. #{restaurant.name}"
