@@ -20,14 +20,11 @@ class Cli
         print_restaurant(restaurant)
         
       elsif input == "list"
-      
         show_restaurants
-      #elsif input == "exit"
-        #puts "See you ,next time !"
       else
         puts "I'm not sure I get this!"
       end
-      puts " "
+        puts " "
         puts "Would you like more options to make the best decision ? "
         puts "In that case ,select another number to see more details or type 'list' to visualize the list again or type 'exit'to exit"
         
