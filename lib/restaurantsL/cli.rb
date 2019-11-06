@@ -20,6 +20,7 @@ class Cli
         print_restaurant(restaurant)
         
       elsif input == "list"
+      
         show_restaurants
       #elsif input == "exit"
         #puts "See you ,next time !"
@@ -32,7 +33,7 @@ class Cli
         
         input = gets.strip.downcase
     end 
-    puts "See you ,next time !"
+    puts "Bye,see you next time !"
   end 
   def print_restaurant(restaurant)
     puts "-----------------------------------------"
